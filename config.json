@@ -1,0 +1,18 @@
+{
+    "INFO_0": "/// BOT CONFIG SECTION. ///",
+    "botUsername": "",
+    "botOauthToken": "",
+    "channelList": [""],
+
+    "INFO_1": "/// CHANNEL IDs BY COMMAND /// ",
+    "osrsID": "",
+
+    "INFO_2": "/// GET ChannelID ///",
+    "debug": true,
+    "getID": false,
+
+    "INFO_3": "/// MESSAGE CONFIG ///",
+    "responseMsg":"",
+    "rsnNotFoundMsg":"",
+    "skillNotFoundMsg":""
+}

@@ -1,0 +1,26 @@
+{
+  "name": "twitchbotrslvl",
+  "version": "1.0.0",
+  "description": "!lvl rsn skill and get your updated xp!",
+  "main": "bot.js",
+  "scripts": {
+    "dev": "nodemon ./bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KATalyzt75/twitchBotRSLVL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KATalyzt75/twitchBotRSLVL/issues"
+  },
+  "homepage": "https://github.com/KATalyzt75/twitchBotRSLVL#readme",
+  "devDependencies": {
+    "node-fetch": "^2.6.7",
+    "tmi.js": "^1.8.5"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
