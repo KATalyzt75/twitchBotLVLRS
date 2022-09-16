@@ -4,7 +4,7 @@
   "description": "!lvl rsn skill and get your updated xp!",
   "main": "bot.js",
   "scripts": {
-    "dev": "nodemon ./bot.js"
+    "app": "nodemon ./bot.js"
   },
   "repository": {
     "type": "git",

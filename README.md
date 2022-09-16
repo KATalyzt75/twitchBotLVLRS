@@ -5,7 +5,7 @@ In a console with git and Node.js installed (You can find that on Google)
 - git clone https://github.com/KATalyzt75/twitchBotLVLRS<br>
 - cd twitchBotLVLRS<br>
 - sudo npm i -D<br>
-- npm run dev OR RUN.bat (In Windows)<br>
+- npm run app OR RUN.bat (In Windows)<br>
   
 # Configurations:
 For this, you have two files, Config.json and Skills.json:
