@@ -34,8 +34,8 @@ client.connect();
 
 client.on("chat", (user, context, msj, self) => {
   if (self) return; // If he sends a message himself, he ignores it.
-  const msjArr = msj.toLowerCase().trim().split(" "); // Divide the complete string to an array.
-  const command = msjArr.shift(); // Get Command ID
+  const msjArr = msj.trim().split(" "); // Divide the complete string to an array.
+  const command = msjArr.shift().toLowerCase(); // Get Command ID
 
   //  globalUserVariables
   const useCfg = {
@@ -45,8 +45,9 @@ client.on("chat", (user, context, msj, self) => {
 
   if (context["room-id"] === channelID) { // It exec the code in a specific stream (If you don't know that info, see the last line!)
     if (command === "!lvl") { // Specify the name of the command
-      const skillName = msjArr.pop(); // Get Skill ID
-      const rSN = msjArr.join(" "); // Get RuneScapeName
+      const skillName = msjArr.pop().toLowerCase(); // Get Skill ID
+      const rSNUppercase = msjArr.join(" "); // Get RuneScapeName with uppercase
+      const rSN = rSNUppercase.toLowerCase(); // Get RuneScapeName
 
       let skillId;
       if (skillName in skill[0]){
@@ -76,14 +77,12 @@ client.on("chat", (user, context, msj, self) => {
                 fetch(
                   `https://templeosrs.com/php/add_datapoint.php?player=${rSN}`
                 ).then((response) => response);
-              } else {
-                ("");
               }
               client.say(
                 user,
                 toLiteral(config["responseMsg"],{
                 thisUser: context["display-name"],
-                rsn: rSN,
+                rsn: rSNUppercase,
                 skill: data.data.skill,
                 level: data.data.level,
                 xp: data.data.xp_format,
