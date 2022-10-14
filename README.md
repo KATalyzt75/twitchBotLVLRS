@@ -22,7 +22,7 @@ For this, you have two files, Config.json and Skills.json:
 ### Variables for config.json in the last three lines (Custom messages)
   - ${thisUser} = Person who executed the command (All messages can use this var)<br>
   ##### Only in "responseMsg":
-  - ${rsn} = Returns the RSN passed by parameter in lowercase<br>
+  - ${rsn} = Returns the RSN passed by parameter<br>
   - ${skill} = Returns the Skill passed by parameter<br>
   - ${level} = Returns the Level for the Skill<br>
   - ${xp} = Returns the Experience for the Skill<br>
