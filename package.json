@@ -1,10 +1,10 @@
 {
   "name": "twitchbotrslvl",
-  "version": "1.0.0",
+  "version": "1.0.8",
   "description": "!lvl rsn skill and get your updated xp!",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
-    "app": "nodemon ./bot.js"
+    "app": "nodemon ./index.js"
   },
   "repository": {
     "type": "git",

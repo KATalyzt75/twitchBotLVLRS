@@ -7,7 +7,7 @@
     "INFO_1": "/// CHANNEL IDs BY COMMAND /// ",
     "osrsID": "",
 
-    "INFO_2": "/// GET ChannelID ///",
+    "INFO_2": "/// GET Channel ID ///",
     "debug": true,
     "getID": false,
 
